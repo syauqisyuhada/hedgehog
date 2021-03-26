@@ -1,0 +1,71 @@
+/* buat tablet */
+
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
+
+ /* buat hp */
+
+ @media screen and (max-width: 670px) {
+    #content,
+    body {
+        text-align: center;
+    }  
+    
+    nav {
+        height: 50px;
+        width: 100%
+    }
+
+    nav ul{
+        width: 100%;
+        display: none;
+        height: auto;
+        margin-top: 50px;
+        background: #fff;
+    }
+
+    nav li{
+        width: 100%;
+        float: none;
+        display: block;
+        background: #fff;
+    }
+
+    nav li a {
+        border-bottom: 1px solid #f0f0f0;
+        border-right: 1px solid #f0f0f0;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        color: #333333;
+        line-height: 4;
+    }
+    
+    nav a#pull{
+        display: block;
+        background-color: #3498db;
+        width: 100%;
+        position: relative;
+        color: #fff;
+    }
+
+    nav a#pull:after{
+        content: "";
+        background: url('nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+ }
